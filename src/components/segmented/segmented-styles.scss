@@ -1,0 +1,40 @@
+.segmented-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  .segmented-item{
+    border: lightblue 1px solid;
+    width: 100px;
+    text-align: center;
+    margin-inline: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .active{
+    background: lightblue;
+  }
+}
+
+.pet-card{
+  overflow: hidden;
+  .pet-card-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  .visible{
+    visibility: visible;
+  }
+}
